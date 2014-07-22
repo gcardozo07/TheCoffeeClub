@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="indexApp">
+<head>
+	<meta charset="UTF-8">
+	<title>The Coffee Club</title>
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-touch-icon-152x152.png" />
+<!-- styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+<!-- end styles -->
+</head>
+<body ng-controller="indexController">
+
+<!-- container-->
+<div class="container contall">
+
+<!-- header-->
+	<header class="row-fluid" ng-init="tab=1">
+		<div class="span12">
+			<div class="span4 brand logo"><img src="assets/img/the-coffee-club-logo.png" alt=""></div>
+			<div class="span8">
+				<nav class="menu">
+					<div class="ribbon"><img src="assets/img/ribbon.png" alt=""></div>
+					<ul>
+						<li class"item" ng-class="{activate:isSelected(1)}" ng-click="selectedTab(1)"><a href="index.html">Inicio</a><i class="fa fa-home"></i></li>
+						<li class"item" ng-class="{activate:isSelected(2)}" ng-click="selectedTab(2)"><a href="nuestra-empresa.html">Nuestra Empresa</a><i class="fa fa-heart"></i></li>
+						<li class"item" ng-class="{activate:isSelected(3)}" ng-click="selectedTab(3)"><a href="nuestro-cafe.html">Nuestro Café</a><i class="fa fa-coffee"></i></li>
+						<li class"item" ng-class="{activate:isSelected(4)}" ng-click="selectedTab(4)"><a href="servicios.html">Servicios</a><i class="fa fa-thumbs-o-up"></i></li>
+						<li class"item" ng-class="{activate:isSelected(5)}" ng-click="selectedTab(5)"><a href="contacto.html">Contacto</a><i class="fa fa-phone"></i></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+<!-- end header-->
+
+<!--slider-->
+	<section class="row-fluid slider">
+		<div class="span12">
+			
+			<div id="myslide" class="carousel slide">
+		
+
+				<div class="carousel-inner">
+
+					<div class="item active">
+							<div class="row-fluid">
+								<img src="assets/img/slide01.jpg" alt="">
+							</div>
+					</div>
+
+					<div class="item">
+							<div class="row-fluid">
+								<img src="assets/img/slide02.jpg" alt="">
+							</div>
+					</div>
+
+					<div class="item">
+							<div class="row-fluid">
+								<img src="assets/img/slide03.jpg" alt="">
+							</div>
+					</div>
+
+					<div class="item">
+							<div class="row-fluid">
+								<img src="assets/img/slide04.jpg" alt="">
+							</div>
+					</div>
+
+					<div class="item">
+							<div class="row-fluid">
+								<img src="assets/img/slide05.jpg" alt="">
+							</div>
+					</div>
+
+					<div class="item">
+							<div class="row-fluid">
+								<img src="assets/img/slide06.jpg" alt="">
+							</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="container">
+				<a href="#myslide" data-slide="prev" class="carousel-control left"><img src="assets/img/arrow-izq.png" alt=""></a>
+				<a href="#myslide" data-slide="next" class="carousel-control right arrow"><img src="assets/img/arrow-der.png" alt=""></a>
+			</div>
+	</section>
+<!--end slider-->
+
+<!-- info -->
+	<section class="row-fluid infotext">
+		<div class="span12">
+			<div class="span3 photo hidden-phone">
+				<img src="assets/img/the-coffee-club-01.jpg" alt="">
+			</div>
+
+			<div class="span9 text">
+				
+				<p>
+					En The Coffee Club queremos brindar a las empresas una alternativa nueva, llena de sabor, color, aroma y amor por lo que hacemos. Buscamos exceder las expectativas de nuestros clientes con un servicio a tiempo, con los mejores ingredientes frescos y las mejores maquinas e insumos que nos permiten entregar un producto de calidad y a la altura de sus eventos y reuniones para sus invitados.
+					<p><a href="servicios.html"><img src="assets/img/btn-servicios.png" alt=""></a></p>
+				</p>
+			</div>
+		</div>
+	</section>
+<!-- end info -->
+
+<!-- footer -->
+	<footer class="row-fluid footer">
+		<div class="span12">
+			<div class="span8">
+				<div class="span2 contactimg hidden-phone"><img src="assets/img/bg-contact.png" alt=""></div>
+				<div class="span10 contacttext">
+					<p>
+						Para cotizaciones e información por favor contactenos a: <br/>
+						<a href="mailto:info@thecoffeclub.com.co">info@thecoffeclub.com.co</a><br/>
+						Movil: 320-4476960<br/>
+						Bogotá-Colombia
+					</p>
+				</div>
+			</div>
+			<div class="span4 socialcont">
+				<a href="https://es-es.facebook.com/thecoffeeclub2014" target="_blank"><div class="social1"></div></a>
+				<a href="https://twitter.com/TheCoffeeClubCo" target="_blank"><div class="social2"></div></a>
+			<div class="span10 siguenos">Síguenos</div>
+			</div>
+		</div>
+	</footer>
+<!-- end footer -->
+
+</div>	
+<!-- end container-->
+
+
+<!-- scripts -->
+	<script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/indexController.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/modernizr.js"></script>
+	<script src="assets/js/prefixfree.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script type='text/javascript'>
+	    $(function(){
+		$('.carousel').carousel({
+		      interval: 4000,
+		      pause: false
+		    });
+		$('.carousel-control.right').trigger('click');
+		});
+	</script>
+<!-- end scripts -->
+</body>
+</html>

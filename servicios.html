@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="indexApp">
+<head>
+	<meta charset="UTF-8">
+	<title>The Coffee Club</title>
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-touch-icon-152x152.png" />
+<!-- styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+<!-- end styles -->
+</head>
+<body ng-controller="indexController">
+
+<!-- container-->
+<div class="container contall">
+
+<!-- header-->
+	<header class="row-fluid" ng-init="tab=4">
+		<div class="span12">
+			<div class="span4 brand logo"><img src="assets/img/the-coffee-club-logo.png" alt=""></div>
+			<div class="span8">
+				<nav class="menu">
+					<div class="ribbon"><img src="assets/img/ribbon.png" alt=""></div>
+					<ul>
+						<li class"item" ng-class="{activate:isSelected(1)}" ng-click="selectedTab(1)"><a href="index.html">Inicio</a><i class="fa fa-home"></i></li>
+						<li class"item" ng-class="{activate:isSelected(2)}" ng-click="selectedTab(2)"><a href="nuestra-empresa.html">Nuestra Empresa</a><i class="fa fa-heart"></i></li>
+						<li class"item" ng-class="{activate:isSelected(3)}" ng-click="selectedTab(3)"><a href="nuestro-cafe.html">Nuestro Café</a><i class="fa fa-coffee"></i></li>
+						<li class"item" ng-class="{activate:isSelected(4)}" ng-click="selectedTab(4)"><a href="servicios.html">Servicios</a><i class="fa fa-thumbs-o-up"></i></li>
+						<li class"item" ng-class="{activate:isSelected(5)}" ng-click="selectedTab(5)"><a href="contacto.html">Contacto</a><i class="fa fa-phone"></i></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+<!-- end header-->
+
+<!-- imgtop -->
+	<section class="row-fluid">
+		<div class="span12 imgtop">
+			<img src="assets/img/img-serv-top.png" alt="">
+		</div>
+	</section>
+<!-- end imgtop -->
+
+<!-- info -->
+	<section class="row-fluid infotext">
+		<div class="paddingbox">
+			<div class="titlecat"><i class="fa fa-thumbs-o-up"></i> Servicios</div>
+		</div>
+
+		<div class="span12 paddingbox">
+			
+
+			<div class="span4 menuserv">
+				<ul>
+					<li id="servitem01"><img src="assets/img/expreso.png" alt=""></li>
+					<li id="servitem02"><img src="assets/img/expreso-club.png" alt=""></li>
+					<li id="servitem03"><img src="assets/img/refrigerios.png" alt=""></li>
+					<p><img src="assets/img/img-serv.png" class="servitem01" alt=""></p>
+				</ul>
+			</div>
+
+				<div class="showome">
+					<div class="span8 contentserv">
+						<p>
+							Queremos estar presente con nuestro aroma y sabor en sus congresos, presentaciones comerciales, seminarios, entrenamientos, diplomados, juntas corporativas, lanzamientos, convenciones y demás eventos corporativos. Para todos estas ocasiones su empresa podrá contar con:
+						<p>
+					    <span class="bold">Catering de bebidas especializadas a base de café</span>.
+					    
+					    <ul>
+							<li>Bebidas frias de café</li>
+							<li>Bebidas calientes de cafe</li>
+						</ul>
+
+					     <span class="bold">Refrigerios tipo gourmet.</span>
+						<ul>
+							<li>Sandwich gourmet.</li>
+							<li>Pasteleria</li>
+						</ul>
+						<p>
+							Los precios por evento están basados en 3 cosas: el numero de invitados que esta esperando, la duración del evento y el lugar de ubicación del evento. Nuestro precio incluye todo – desde el personal, los insumos, el transporte, etc; no incluimos valores de ultimo momento como bebidas adicionales u otros sobrecostos. Lo que se acuerda con el cliente es el valor final.
+						</p>
+					</div>
+
+<!-- Expreso Break -->
+					<section class="expreso-break">
+						<h1 class="subtitle">Spresso Break</h1>
+						<p>	
+							Ideal para eventos donde se requieren de pequeños descansos durante largas jornadas. En estos espacios The Coffee Club prepara y suministra en el lugar del evento café americano, te y/o infusiones, ideal para cursos, capacitaciones, seminarios, diplomados, y entrenamientos cortos. The Coffee Club suministra producto con base en el número de participantes. 
+						</p>
+					</section>
+<!-- end Expreso Break -->
+
+<!-- Expreso Club -->
+					<section class="expreso-club">
+						<h1 class="subtitle">Spresso Club</h1>
+						<p>	
+							estación móvil donde se preparan y suministran todas las opciones de bebidas frias y calientes de café. Ideal para Congresos, Presentaciones Comerciales Convenciones, Entrenamientos de varios días, Juntas Directivas. El servicio completo se puede configurar acorde a las expectativas del cliente y el presupuesto:
+							<ul>
+								<li>Paquete Básico.</li>
+								<li>Paquete Platino.</li>
+								<li>Paquete  Gold.</li>
+							</ul>
+
+							Nuestros 2 servicios Spresso Break y Spresso Club pueden ser prestados los 365 días del año incluyendo Domingos y Festivos. The Coffee Club opera en horario nocturno con valores adicionales que se detallaran en las ofertas comerciales acorde a las expectativas y presupuestos del cliente.
+
+						</p>
+					</section>
+<!-- end Expreso Club -->
+
+<!-- Expreso Club -->
+					<section class="refrigerios">
+						<h1 class="subtitle">Refrigerios Gourmet</h1>
+						<p>	
+							The Coffee Club complementa su oferta de bebidas de café con emparedados tipo gourmet y una línea de pastelería . Los emparedados frescos y con los mejores ingredientes brindan una solución practica, llena de sabor, que complementa perfectamente un momento de descanso en la mitad de las actividades corporativas. La línea de pastelería ofrece un producto delicado, visual, lleno de manos expertas y con todo el sabor de las recetas europeas. Croissants, Galletas, Hojaldres y Muffins hacen parte de nuestro portafolio.
+						</p>
+
+						<p>
+							Los precios por evento están basados en 3 cosas: el numero de invitados que esta esperando, la duración del evento y el lugar de ubicación del evento. Nuestro precio incluye todo – desde el personal, los insumos, el transporte, etc; no incluimos valores de ultimo momento como bebidas adicionales u otros sobrecostos. Lo que se acuerda con el cliente es el valor final.
+						</p>
+					</section>
+<!-- end Expreso Club -->
+
+				</div>
+			
+			</div>
+	</section>
+<!-- end info -->
+
+
+<!-- footer -->
+	<footer class="row-fluid footer">
+		<div class="span12">
+			<div class="span8">
+				<div class="span2 contactimg hidden-phone"><img src="assets/img/bg-contact.png" alt=""></div>
+				<div class="span10 contacttext">
+					<p>
+						Para cotizaciones e información por favor contactenos a: <br/>
+						<a href="mailto:info@thecoffeclub.com.co">info@thecoffeclub.com.co</a><br/>
+						Movil: 320-4476960<br/>
+						Bogotá-Colombia
+					</p>
+				</div>
+			</div>
+			<div class="span4 socialcont">
+				<a href="https://es-es.facebook.com/thecoffeeclub2014" target="_blank"><div class="social1"></div></a>
+				<a href="https://twitter.com/TheCoffeeClubCo" target="_blank"><div class="social2"></div></a>
+			<div class="span10 siguenos">Síguenos</div>
+			</div>
+		</div>
+	</footer>
+<!-- end footer -->
+
+</div>	
+<!-- end container-->
+
+
+<!-- scripts -->
+	<script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/indexController.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/modernizr.js"></script>
+	<script src="assets/js/prefixfree.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script type='text/javascript'>
+	    $(function(){
+		$('.carousel').carousel({
+		      interval: 4000,
+		      pause: false
+		    });
+		$('.carousel-control.right').trigger('click');
+		});
+	</script>
+<!-- end scripts -->
+</body>
+</html>

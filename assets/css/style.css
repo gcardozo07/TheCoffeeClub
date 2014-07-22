@@ -1,0 +1,489 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans-bold-webfont.eot');
+    src: url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-bold-webfont.woff') format('woff'),
+         url('fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+::selection {color:#fff;background:#c00;}
+::-moz-selection {color:#fff;background:#c00;}
+
+a:link{
+	color: #c00;
+}
+
+a:hover{
+	color: #ccc;
+}
+
+.zero{
+	padding:0;
+	margin: 0; 
+}
+body,html,.container{
+	font-family: 'open_sansregular';
+    color: #f00;
+    font-size: 12px;
+}
+
+body{
+    background: url(../img/coffeebody.jpg) no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'open_sansregular';
+    color: #f00;
+    font-size: 12px;
+}
+
+.contall{
+	background: #fff;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin-top: 0px;
+	box-shadow: 0px 5px 15px #666;
+	font-family: 'open_sansregular';
+}
+
+.menu{
+	position: relative;
+	background: url(../img/coffee-menu.png);
+	width: 90%;
+	float: right;
+	height: 90px;
+	z-index: 3;
+	font-family: 'bebas_neueregular';
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+.menu ul{
+	padding: 0;
+	margin: 0;
+	float: left;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+}
+
+.menu ul li{
+	display: inline-block;
+	width: 18%;
+	border-bottom: 0px solid #c00;
+	position: relative;
+	-moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.menu ul li:hover{
+	background: rgba(190,22,34,0.7);
+	padding-bottom:40px;
+	border-bottom: 8px solid #c00;
+	border-radius: 0 0 5px 5px;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.activeme{
+	background: rgba(190,22,34,0.7);
+	padding-bottom:40px;
+	border-bottom: 8px solid #c00;
+	border-radius: 0 0 5px 5px;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.menu ul li a{
+	color: #fff;
+	line-height: 90px;
+}
+
+.menu ul li i{
+	position: relative;
+	display: block;
+	font-size: 26px;
+	line-height: 0px;
+	opacity: 0;
+
+}
+
+.showme{
+	display: none;
+	opacity: 0;
+}
+
+.hideme{
+	display: visible;
+	opacity: 1;
+}
+
+.logo{
+	position: relative;
+	z-index: 4;
+	display: block;
+}
+
+.logo img{
+	position: absolute;
+}
+
+.ribbon{
+	position: absolute;
+	left: -42px;
+}
+
+.ribbon img{
+	width: 100%;
+}
+
+.slider{
+	position: relative;
+	width: 100%;
+	max-height: 350px;
+	z-index: 2;
+}
+
+.infotext{
+	position: relative;
+	width: 100%;
+	margin: 40px 0;
+	min-height: 340px;
+	background: url(../img/bg-cup.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+.text{
+	width: 100%;
+	font-size: 14px;
+	text-align: justify;
+	position: relative;
+	line-height: 22px;
+	color: #666;
+	padding:40px;
+	font-family: 'open_sansregular';
+}
+
+.photo{
+	width: 100%;
+	max-height: 335px;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+
+.photo img{
+	margin:0 auto;
+	position: relative;
+	bottom: 0;
+	padding-left: 5px;
+
+}
+.footer{
+	width: 100%;
+	background: #000;
+	position: relative;
+	min-height: 100px;
+}
+.footer a:hover{
+	color: #f00;
+}
+.contactimg{
+	padding-top: 22px;
+	width: 100%;
+	padding-left: 10px;
+}
+
+.contacttext{
+	color: #fff;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.social1{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	float: right;
+	background: url(../img/bg-social1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	-moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.social2{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	float: right;
+	background: url(../img/bg-social2.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	-moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.social1:hover{
+	background-position: bottom center;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.social2:hover{
+	background-position: bottom center;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.socialcont{
+	margin-top: 10px;
+	width: 220px;
+	right: 20px;
+	position: relative;
+}
+
+.siguenos{
+	text-align: right;
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'bebas_neueregular';
+}
+.imgtop{
+	position: relative;
+	width: 100%;
+	min-height: 120px;
+	top: -1px;
+}
+.imgtop img{
+	width: 100%;
+
+}
+.titlecat{
+	width: 100%;
+	height: 30px;
+	font-size: 32px;
+	position: relative;
+	color: #333;
+	font-family: 'bebas_neueregular';
+	border-bottom: 2px solid #c00;
+	margin: 20px 0;
+	text-align: right;
+	padding: 5px 0;
+}
+
+.titlecat i{
+	color: #c00;
+}
+
+.videocont{
+	max-width: 640px;
+	min-height: 480px;
+	margin: 0 auto;
+	background: url(../img/bgvideo.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.videocont iframe{
+	margin: 0 auto;
+	padding: 20px;
+}
+.paddingbox{
+	padding: 0 40px;
+}
+
+.activate{
+	background: rgba(190,22,34,0.7);
+	padding-bottom:40px;
+	border-bottom: 8px solid #c00;
+	border-radius: 0 0 5px 5px;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.contactform{
+	color: #666;
+	width: 100%;
+	border: 0;
+	font-family: 'open_sansregular';
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	padding: 0 40px ;
+}
+
+.contactform fieldset{
+	border: 0;
+	width: 100%;
+}
+
+
+.contactform textarea{
+	width: 80%;
+}
+
+.contactform input.inputText {
+	width: 80%;
+	padding: 2%;
+	color: #c00;
+	background-color: transparent;
+	border: 1px solid #AAAAAA;
+	font-family: 'open_sansregular';
+	-moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.contactform input.inputText:focus {
+	border: 1px solid #c00;
+	box-shadow: none;
+	border-radius:15px;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.contactform textarea.inputText:focus {
+	border: 1px solid #c00;
+	box-shadow: none;
+	border-radius:15px;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.contactform textarea.inputText {
+	width: 80%;
+	padding: 2%;
+	color: #c00;
+	background-color: transparent;
+	border: 1px solid #AAAAAA;
+	font-family: 'open_sansregular';
+	-moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+.bold{
+	font-family: 'open_sansbold';
+}
+
+.contactform label{
+	color: #666;
+	font-size: 14px;
+	font-family: 'open_sansregular';
+}
+
+.menuserv{}
+
+.menuserv ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.menuserv ul li{
+	margin: 10px 0;
+}
+.showome{
+	width: 95%;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: 'open_sansregular';
+	color: #666;
+	padding: 0 20px;
+	text-align: justify;
+}
+
+.contentserv{
+
+
+}
+
+.contentserv li{
+	list-style: url(../img/li.png);
+}
+
+.showthem{
+	opacity: 1;
+}
+.expreso-break{
+	display: none;
+	position: relative;
+	z-index: 999;
+	background: : #000;
+}
+.expreso-club{
+	display: none;
+	position: relative;
+	z-index: 999;
+	background: : #000;
+}
+.refrigerios{
+	display: none;
+	position: relative;
+	z-index: 999;
+	background: : #000;
+}
+.subtitle{
+	text-align: left;
+	font-family: 'bebas_neueregular';
+	color: #c00;
+}
+
+.expreso-club ul{
+
+}
+
+.expreso-club li{
+	list-style: url(../img/li.png);
+}
